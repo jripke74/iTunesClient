@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8961CAAE1F20DCBD000A45C8 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8961CAAD1F20DCBD000A45C8 /* Song.swift */; };
 		899199AF1F2027EB006BF768 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199AE1F2027EB006BF768 /* AppDelegate.swift */; };
 		899199B11F2027EB006BF768 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199B01F2027EB006BF768 /* ViewController.swift */; };
 		899199B41F2027EB006BF768 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899199B21F2027EB006BF768 /* Main.storyboard */; };
 		899199B61F2027EB006BF768 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 899199B51F2027EB006BF768 /* Assets.xcassets */; };
 		899199B91F2027EB006BF768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 899199B71F2027EB006BF768 /* LaunchScreen.storyboard */; };
 		899199C41F20282A006BF768 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C31F20282A006BF768 /* Artist.swift */; };
+		899199C61F202A23006BF768 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C51F202A23006BF768 /* Genre.swift */; };
+		899199C91F202AA5006BF768 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C81F202AA5006BF768 /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8961CAAD1F20DCBD000A45C8 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		899199AB1F2027EB006BF768 /* iTunesClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		899199AE1F2027EB006BF768 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		899199B01F2027EB006BF768 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		899199B81F2027EB006BF768 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		899199BA1F2027EB006BF768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		899199C31F20282A006BF768 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		899199C51F202A23006BF768 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		899199C81F202AA5006BF768 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				899199C31F20282A006BF768 /* Artist.swift */,
+				899199C51F202A23006BF768 /* Genre.swift */,
+				899199C81F202AA5006BF768 /* Album.swift */,
+				8961CAAD1F20DCBD000A45C8 /* Song.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -164,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8961CAAE1F20DCBD000A45C8 /* Song.swift in Sources */,
 				899199C41F20282A006BF768 /* Artist.swift in Sources */,
 				899199B11F2027EB006BF768 /* ViewController.swift in Sources */,
 				899199AF1F2027EB006BF768 /* AppDelegate.swift in Sources */,
+				899199C61F202A23006BF768 /* Genre.swift in Sources */,
+				899199C91F202AA5006BF768 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +342,7 @@
 				899199BF1F2027EB006BF768 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

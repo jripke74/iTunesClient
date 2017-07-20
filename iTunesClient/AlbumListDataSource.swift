@@ -35,4 +35,9 @@ class AlbumListDataSource: NSObject, UITableViewDataSource {
         albumCell.accessoryType = .disclosureIndicator
         return albumCell
     }
+    
+    // MAR: - Helper
+    func album(at indexPath:IndexPath) -> Album {
+        return albums[indexPath.row]
+    }
 }

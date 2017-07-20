@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1481" y="743"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Album Detail View Controller-->
         <scene sceneID="dGq-zD-Wet">
             <objects>
-                <tableViewController id="scd-d6-dlj" sceneMemberID="viewController">
+                <tableViewController id="scd-d6-dlj" customClass="AlbumDetailViewController" customModule="iTunesClient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="D9a-hw-GKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="VqA-tf-1yY">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongCell" id="VqA-tf-1yY" customClass="SongCell" customModule="iTunesClient" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="155.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VqA-tf-1yY" id="GTy-ja-qN0">
@@ -232,6 +232,10 @@
                                         <constraint firstItem="o6N-pi-M1g" firstAttribute="leading" secondItem="GTy-ja-qN0" secondAttribute="leadingMargin" constant="8" id="NEH-ME-pIK"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="songRunTimeLabel" destination="esm-Vp-GNe" id="b8i-9c-1lY"/>
+                                    <outlet property="songTitleLabel" destination="o6N-pi-M1g" id="nek-A7-Vmi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -239,6 +243,12 @@
                             <outlet property="delegate" destination="scd-d6-dlj" id="ubx-0z-KuR"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="albumGenreLabel" destination="s7u-y3-pMX" id="4Ms-7Y-KSA"/>
+                        <outlet property="albumReleaseDateLabel" destination="QzH-jf-h3M" id="CKD-Hq-WcL"/>
+                        <outlet property="albumTitleLabel" destination="bRs-iH-UPM" id="SUO-uW-2tI"/>
+                        <outlet property="artworkView" destination="84H-jT-5KB" id="dNy-LV-cco"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BML-oP-mAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

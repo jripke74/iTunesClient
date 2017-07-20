@@ -115,7 +115,6 @@
 				899199C81F202AA5006BF768 /* Album.swift */,
 				8961CAAD1F20DCBD000A45C8 /* Song.swift */,
 				8961CAAF1F20DF2C000A45C8 /* Stub.swift */,
-				8956DA9E1F20F818002D6B6A /* AlbumListController.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		899199C21F20280F006BF768 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8956DA9E1F20F818002D6B6A /* AlbumListController.swift */,
 				899199B01F2027EB006BF768 /* ViewController.swift */,
 				8961CAB11F20E568000A45C8 /* SearchResultsController.swift */,
 			);

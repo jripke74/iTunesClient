@@ -30,3 +30,28 @@ extension Endpoint {
 enum Itunes {
     case search(term: String, media: ItunesMedia?)
 }
+
+extension Itunes: Endpoint {
+    var base: String {
+        return "https://itunes.apple.com"
+    }
+    var path: String {
+        switch self {
+        case .search:
+            return "/search"
+        }
+    }
+    var queryItems: [URLQueryItem] {
+        switch self {
+        case .search(let term, let media):
+            var result = [URLQueryItem]()
+            let searchTermItem = URLQueryItem(name: "term", value: term)
+            result.append(searchTermItem)
+            if let media = media {
+                let mediaItem = URLQueryItem(name: "media", value: media.description)
+                result.append(mediaItem)
+            }
+            return result
+        }
+    }
+}

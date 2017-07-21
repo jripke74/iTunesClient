@@ -9,4 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let endpoint = Itunes.search(term: "talor swift", media: .music)
+        print(endpoint.request)
+    }
 }

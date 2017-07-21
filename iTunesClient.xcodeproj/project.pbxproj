@@ -34,6 +34,8 @@
 		89E99FFA1F226258009C314B /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FF91F226258009C314B /* QueryItemProvider.swift */; };
 		89E99FFC1F226615009C314B /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FFB1F226615009C314B /* ItunesAttributes.swift */; };
 		89E99FFF1F226F70009C314B /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FFE1F226F70009C314B /* JSONDownloader.swift */; };
+		89E9A0011F227A86009C314B /* ItunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0001F227A86009C314B /* ItunesError.swift */; };
+		89E9A0031F227F1D009C314B /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,8 @@
 		89E99FF91F226258009C314B /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
 		89E99FFB1F226615009C314B /* ItunesAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
 		89E99FFE1F226F70009C314B /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		89E9A0001F227A86009C314B /* ItunesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesError.swift; sourceTree = "<group>"; };
+		89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				89E99FFE1F226F70009C314B /* JSONDownloader.swift */,
+				89E9A0001F227A86009C314B /* ItunesError.swift */,
+				89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -261,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89E9A0011F227A86009C314B /* ItunesError.swift in Sources */,
 				89E99FFF1F226F70009C314B /* JSONDownloader.swift in Sources */,
 				8961CAAE1F20DCBD000A45C8 /* Song.swift in Sources */,
 				899199C41F20282A006BF768 /* Artist.swift in Sources */,
@@ -275,6 +282,7 @@
 				899199AF1F2027EB006BF768 /* AppDelegate.swift in Sources */,
 				8956DA9F1F20F818002D6B6A /* AlbumListController.swift in Sources */,
 				8961CAB21F20E568000A45C8 /* SearchResultsController.swift in Sources */,
+				89E9A0031F227F1D009C314B /* ItunesAPIClient.swift in Sources */,
 				89E99FF81F225270009C314B /* ItunesEntity.swift in Sources */,
 				8956DAAE1F215E4E002D6B6A /* SongCell.swift in Sources */,
 				899199C61F202A23006BF768 /* Genre.swift in Sources */,

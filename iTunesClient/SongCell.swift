@@ -14,7 +14,4 @@ class SongCell: UITableViewCell {
     
     @IBOutlet weak var songTitleLabel: UILabel!
     @IBOutlet weak var songRunTimeLabel: UILabel!
-    
-    
-
 }

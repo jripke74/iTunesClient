@@ -12,7 +12,6 @@ class AlbumCell: UITableViewCell {
     
     static let reuseIdentifier = "AlbumCell"
     
-    
     @IBOutlet weak var artworkView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!

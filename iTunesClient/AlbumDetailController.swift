@@ -8,12 +8,19 @@
 
 import UIKit
 
-class AlbumDetailViewController: UITableViewController {
+class AlbumDetailController: UITableViewController {
     
-    var album: Album?
-    lazy var dataSource: AlbumDetailDataSource = {
-        return AlbumDetailDataSource(songs: self.album!.songs)
-    }()
+    var album: Album? {
+        didSet {
+            if let album = album {
+                configure(with: album)
+                dataSource.update(with: album.songs)
+                tableView.reloadData()
+            }
+        }
+    }
+    
+    var dataSource = AlbumDetailDataSource(songs: [])
     
     @IBOutlet weak var artworkView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
@@ -26,7 +33,6 @@ class AlbumDetailViewController: UITableViewController {
             configure(with: album)
         }
         tableView.dataSource = dataSource
-        tableView.delegate = self
     }
     
     func configure(with album: Album) {
@@ -35,6 +41,4 @@ class AlbumDetailViewController: UITableViewController {
         albumGenreLabel.text = viewModel.genre
         albumReleaseDateLabel.text = viewModel.releaseDate
     }
-    
-
 }

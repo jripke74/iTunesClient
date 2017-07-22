@@ -153,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="1481" y="743"/>
         </scene>
-        <!--Album Detail View Controller-->
+        <!--Album Detail Controller-->
         <scene sceneID="dGq-zD-Wet">
             <objects>
-                <tableViewController id="scd-d6-dlj" customClass="AlbumDetailViewController" customModule="iTunesClient" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="scd-d6-dlj" customClass="AlbumDetailController" customModule="iTunesClient" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="D9a-hw-GKF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

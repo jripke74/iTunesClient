@@ -20,7 +20,6 @@ extension AlbumCellViewModel {
         self.genre = album.primaryGenre.name
         
         let formatter = DateFormatter()
-        
         formatter.locale = Locale.current
         formatter.dateFormat = "MMM dd, yyyy"
         

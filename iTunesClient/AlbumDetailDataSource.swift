@@ -11,7 +11,7 @@ import UIKit
 
 class AlbumDetailDataSource: NSObject, UITableViewDataSource {
     
-    private let songs: [Song]
+    private var songs: [Song]
     
     init(songs: [Song]) {
         self.songs = songs
@@ -42,5 +42,9 @@ class AlbumDetailDataSource: NSObject, UITableViewDataSource {
         default:
             return nil
         }
+    }
+    
+    func update(with songs: [Song]) {
+        self.songs = songs
     }
 }

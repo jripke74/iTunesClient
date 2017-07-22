@@ -36,6 +36,8 @@
 		89E99FFF1F226F70009C314B /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FFE1F226F70009C314B /* JSONDownloader.swift */; };
 		89E9A0011F227A86009C314B /* ItunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0001F227A86009C314B /* ItunesError.swift */; };
 		89E9A0031F227F1D009C314B /* ItunesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */; };
+		89E9A0051F239D79009C314B /* ArtworkDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0041F239D79009C314B /* ArtworkDownloader.swift */; };
+		89E9A0071F23A4B8009C314B /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E9A0061F23A4B8009C314B /* PendingOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +53,6 @@
 		8956DAAF1F215F73002D6B6A /* SongViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
 		8956DAB21F2170A0002D6B6A /* ItunesMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesMedia.swift; sourceTree = "<group>"; };
 		8956DAB41F2170E5002D6B6A /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		8956DAB61F21A1E9002D6B6A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		8961CAAD1F20DCBD000A45C8 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		8961CAAF1F20DF2C000A45C8 /* Stub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
 		8961CAB11F20E568000A45C8 /* SearchResultsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
@@ -71,6 +72,8 @@
 		89E99FFE1F226F70009C314B /* JSONDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
 		89E9A0001F227A86009C314B /* ItunesError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesError.swift; sourceTree = "<group>"; };
 		89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAPIClient.swift; sourceTree = "<group>"; };
+		89E9A0041F239D79009C314B /* ArtworkDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkDownloader.swift; sourceTree = "<group>"; };
+		89E9A0061F23A4B8009C314B /* PendingOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +122,6 @@
 		899199A21F2027EB006BF768 = {
 			isa = PBXGroup;
 			children = (
-				8956DAB61F21A1E9002D6B6A /* MyPlayground.playground */,
 				899199AD1F2027EB006BF768 /* iTunesClient */,
 				899199AC1F2027EB006BF768 /* Products */,
 			);
@@ -190,6 +192,8 @@
 				89E99FFE1F226F70009C314B /* JSONDownloader.swift */,
 				89E9A0001F227A86009C314B /* ItunesError.swift */,
 				89E9A0021F227F1D009C314B /* ItunesAPIClient.swift */,
+				89E9A0041F239D79009C314B /* ArtworkDownloader.swift */,
+				89E9A0061F23A4B8009C314B /* PendingOperations.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -269,6 +273,8 @@
 			files = (
 				89E9A0011F227A86009C314B /* ItunesError.swift in Sources */,
 				89E99FFF1F226F70009C314B /* JSONDownloader.swift in Sources */,
+				89E9A0051F239D79009C314B /* ArtworkDownloader.swift in Sources */,
+				89E9A0071F23A4B8009C314B /* PendingOperations.swift in Sources */,
 				8961CAAE1F20DCBD000A45C8 /* Song.swift in Sources */,
 				899199C41F20282A006BF768 /* Artist.swift in Sources */,
 				8956DA9D1F20EFE2002D6B6A /* SearchResultsDataSource.swift in Sources */,

@@ -9,6 +9,7 @@
 import Foundation
 
 class JSONDownloader {
+    
     let session: URLSession
     
     init(configuration: URLSessionConfiguration) {
@@ -22,6 +23,12 @@ class JSONDownloader {
     typealias JSON = [String: AnyObject]
     typealias JSONTaskCompletionHandler = (JSON?, ItunesError?) -> Void
     
+    
+    /// Creates and returns a "URLSessionDataTask" with a completions
+    /// handler.
+    ///
+    /// - Parameter request: to be passed to build URL
+    /// - Parameter completion: to be ran when the URL is needed
     func jsonTask(with request: URLRequest, completionHandler completion: @escaping JSONTaskCompletionHandler) -> URLSessionDataTask {
         let task = session.dataTask(with: request) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse else {

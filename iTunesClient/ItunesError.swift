@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// List of iTunes errors
 enum ItunesError: Error {
     case requestFailed
     case responseUnsuccessful

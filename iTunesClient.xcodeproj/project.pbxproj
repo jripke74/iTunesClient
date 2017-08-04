@@ -87,14 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8956DA9B1F20EFB6002D6B6A /* DataSources */ = {
+		8956DA9B1F20EFB6002D6B6A /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
 				8956DA9C1F20EFE2002D6B6A /* SearchResultsDataSource.swift */,
 				8956DAA21F20FE9B002D6B6A /* AlbumListDataSource.swift */,
 				8956DAAB1F215DBC002D6B6A /* AlbumDetailDataSource.swift */,
 			);
-			name = DataSources;
+			name = "Data Sources";
 			sourceTree = "<group>";
 		};
 		8956DAA41F20FFA3002D6B6A /* View Models */ = {
@@ -140,7 +140,7 @@
 			children = (
 				89E99FFD1F226F54009C314B /* Networking */,
 				8956DAA41F20FFA3002D6B6A /* View Models */,
-				8956DA9B1F20EFB6002D6B6A /* DataSources */,
+				8956DA9B1F20EFB6002D6B6A /* Data Sources */,
 				899199C01F2027FC006BF768 /* Models */,
 				899199C11F202807006BF768 /* Views */,
 				899199C21F20280F006BF768 /* Controllers */,

@@ -37,6 +37,7 @@ class AlbumDetailController: UITableViewController {
     
     func configure(with album: Album) {
         let viewModel = AlbumDetailViewModel(album: album)
+        artworkView.image = album.artworkState == .downloaded ? album.artwork! : #imageLiteral(resourceName: "AlbumPlaceholder")
         albumTitleLabel.text = viewModel.title
         albumGenreLabel.text = viewModel.genre
         albumReleaseDateLabel.text = viewModel.releaseDate

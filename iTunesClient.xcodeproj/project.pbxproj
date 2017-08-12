@@ -30,6 +30,7 @@
 		899199C41F20282A006BF768 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C31F20282A006BF768 /* Artist.swift */; };
 		899199C61F202A23006BF768 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C51F202A23006BF768 /* Genre.swift */; };
 		899199C91F202AA5006BF768 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899199C81F202AA5006BF768 /* Album.swift */; };
+		89A6D8BE1F3FB557001E627B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A6D8BD1F3FB557001E627B /* CloudKit.framework */; };
 		89E99FF81F225270009C314B /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FF71F225270009C314B /* ItunesEntity.swift */; };
 		89E99FFA1F226258009C314B /* QueryItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FF91F226258009C314B /* QueryItemProvider.swift */; };
 		89E99FFC1F226615009C314B /* ItunesAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E99FFB1F226615009C314B /* ItunesAttributes.swift */; };
@@ -66,6 +67,8 @@
 		899199C31F20282A006BF768 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		899199C51F202A23006BF768 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		899199C81F202AA5006BF768 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		89A6D8BB1F3FA4BD001E627B /* iTunesClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iTunesClient.entitlements; sourceTree = "<group>"; };
+		89A6D8BD1F3FB557001E627B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		89E99FF71F225270009C314B /* ItunesEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesEntity.swift; sourceTree = "<group>"; };
 		89E99FF91F226258009C314B /* QueryItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryItemProvider.swift; sourceTree = "<group>"; };
 		89E99FFB1F226615009C314B /* ItunesAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesAttributes.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A6D8BE1F3FB557001E627B /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +128,7 @@
 			children = (
 				899199AD1F2027EB006BF768 /* iTunesClient */,
 				899199AC1F2027EB006BF768 /* Products */,
+				89A6D8BC1F3FB557001E627B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +143,7 @@
 		899199AD1F2027EB006BF768 /* iTunesClient */ = {
 			isa = PBXGroup;
 			children = (
+				89A6D8BB1F3FA4BD001E627B /* iTunesClient.entitlements */,
 				89E99FFD1F226F54009C314B /* Networking */,
 				8956DAA41F20FFA3002D6B6A /* View Models */,
 				8956DA9B1F20EFB6002D6B6A /* Data Sources */,
@@ -186,6 +192,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		89A6D8BC1F3FB557001E627B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89A6D8BD1F3FB557001E627B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89E99FFD1F226F54009C314B /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +246,14 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 997RL2KYD9;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -421,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTunesClient/iTunesClient.entitlements;
 				DEVELOPMENT_TEAM = 997RL2KYD9;
 				INFOPLIST_FILE = iTunesClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -434,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iTunesClient/iTunesClient.entitlements;
 				DEVELOPMENT_TEAM = 997RL2KYD9;
 				INFOPLIST_FILE = iTunesClient/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

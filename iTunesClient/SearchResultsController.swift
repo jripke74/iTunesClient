@@ -16,7 +16,9 @@ class SearchResultsController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action:#selector(SearchResultsController.dismissSearchResultsController))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel,
+                                                            target: self,
+                                                            action:#selector(SearchResultsController.dismissSearchResultsController))
         tableView.tableHeaderView = searchController.searchBar
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchResultsUpdater = self

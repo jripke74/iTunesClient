@@ -8,6 +8,8 @@
 
 import Foundation
 
+// found on: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+
 enum ItunesMedia {
     case movie(entity: MovieEntity?, attribute: MovieAttribute?)
     case podcast(entity: PodcastEntity?, attribute: PodcastAttribute?)

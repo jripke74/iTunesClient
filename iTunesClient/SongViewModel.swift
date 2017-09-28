@@ -13,6 +13,7 @@ struct SongViewModel {
     let runtime: String
 }
 
+// use an extension to not mess with defualt memberwize initializers
 extension SongViewModel {
     init(song: Song) {
         self.title = song.censoredName

@@ -9,11 +9,11 @@
 import Foundation
 
 struct Song {
-    let id: Int
-    let name: String
-    let censoredName: String
-    let trackTime: Int
-    let isExplicit: Bool
+    let id: Int // trackId
+    let name: String // trackName
+    let censoredName: String // trackCensoredName
+    let trackTime: Int // trackTimeMillis
+    let isExplicit: Bool // trackExplicitness
 }
 
 extension Song {

@@ -22,6 +22,7 @@ extension Endpoint {
         return components
     }
     var request: URLRequest {
+        // use optional here because we want it to crash if we did not configure correctly
         let url = urlComponents.url!
         return URLRequest(url: url)
     }

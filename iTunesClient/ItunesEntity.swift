@@ -8,6 +8,8 @@
 
 import Foundation
 
+// found on: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
+
 protocol ItunesEntity: QueryItemProvider {
     var entityName: String { get }
 }

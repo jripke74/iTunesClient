@@ -25,6 +25,7 @@ class ArtworkDownloader: Operation {
         guard let url = URL(string: album.artworkURL) else {
             return
         }
+        // need to handle errors
         let imageData = try! Data(contentsOf: url)
         if isCancelled {
             return

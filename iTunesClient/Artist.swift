@@ -10,15 +10,17 @@ import Foundation
 
 class Artist {
     let id: Int
-    let type: String
+    let wrapperType: String
+    let artistType: String
     let name: String
     let primaryGenre: Genre
     var albums: [Album]
     let artistWebsite: String
     
-    init(id: Int, type: String, name: String, primaryGenre: Genre, albums: [Album], artistWebsite: String) {
+    init(id: Int, wrapperType: String, artistType: String, name: String, primaryGenre: Genre, albums: [Album], artistWebsite: String) {
         self.id = id
-        self.type = type
+        self.wrapperType = wrapperType
+        self.artistType = artistType
         self.name = name
         self.primaryGenre = primaryGenre
         self.albums = albums
@@ -30,12 +32,14 @@ extension Artist {
     convenience init?(json: [String: Any]) {
         struct Key {
             static let artistId = "artistId"
+            static let wrapperType = "wrapperType"
             static let artistType = "artistType"
             static let artistName = "artistName"
             static let primaryGenreId = "primaryGenreId"
             static let artistLinkUrl = "artistLinkUrl"
         }
         guard let artistId = json[Key.artistId] as? Int,
+               let wrapperType = json[Key.wrapperType] as? String,
                let artistType = json[Key.artistType] as? String,
                let artistName = json[Key.artistName] as? String,
                let primaryGenreId = json[Key.primaryGenreId] as? Int,
@@ -44,6 +48,6 @@ extension Artist {
                else {
                   return nil
                }
-        self.init(id: artistId, type: artistType, name: artistName, primaryGenre: primaryGenreValue, albums: [], artistWebsite: artistLinkUrl)
+        self.init(id: artistId, wrapperType: wrapperType, artistType: artistType, name: artistName, primaryGenre: primaryGenreValue, albums: [], artistWebsite: artistLinkUrl)
     }
 }

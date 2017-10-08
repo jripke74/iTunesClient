@@ -10,7 +10,7 @@ import Foundation
 
 struct Stub {
     static var artist: Artist {
-        return Artist(id: 159260351, name: "Taylor Swift", primaryGenre: .pop, albums: [], artistWebsite: "")
+        return Artist(id: 159260351, type: "Artist", name: "Taylor Swift", primaryGenre: .pop, albums: [], artistWebsite: "")
     }
     
     static var albums: [Album] {

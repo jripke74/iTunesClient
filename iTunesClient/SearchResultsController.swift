@@ -26,7 +26,7 @@ class SearchResultsController: UITableViewController {
         definesPresentationContext = true
     }
     
-    func dismissSearchResultsController() {
+    @objc func dismissSearchResultsController() {
         dismiss(animated: true, completion: nil)
     }
     
